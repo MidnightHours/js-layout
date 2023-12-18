@@ -1,0 +1,66 @@
+@use '../../style/layout.scss' as layout;
+
+.post__list {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	
+}
+
+.post {
+	padding: 12px;
+	border-radius: 10px;
+	background-color: #f7f7f7;
+	border: 1px solid #f7f7f7;
+
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+
+	&--viewed {
+		background-color: transparent;
+		border-color: #e6e6e6;
+
+		.post__info {
+			color: #888888;
+		}
+	}
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__category-list {
+		display: flex;
+		gap: 8px;
+	}
+
+	&__date {
+		color: #888;
+		font-size: 14px;
+	}
+
+	&__info {
+		font-size: 16px;
+		line-height: 1.4em;
+		color: #121212;
+	}
+
+	&__category {
+		padding: 8px 12px;
+		font-size: 12px;
+		border-radius: 50px;
+
+		&--1 {
+			color: #f46f17;
+			background-color: #f7e9e1;
+		}
+
+		&--2 {
+			color: #EF5DA8;
+			background-color: #F6E8EF;
+		}
+	}
+	
+}

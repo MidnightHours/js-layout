@@ -1,0 +1,44 @@
+@use '../../style/layout.scss' as layout;
+
+.tab__list {
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 1px solid #888;
+
+}
+
+.tab {
+	font-size: 16px;
+	color: #121212;
+	font-weight: bold;
+	
+	
+	&--active {
+		color: #888;
+	}
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+
+	&__title {
+		font-size: 18px;
+		color: #121212;
+	}
+
+	&__description {
+		font-size: 14px;
+		color: #363636;
+		line-height: 1.5em;
+	}
+
+	&__button {
+		border-radius: 10px;
+		background: #F46F17;
+		font-size: 14px;
+		color: #fff;
+		padding: 16px;
+	}
+}
